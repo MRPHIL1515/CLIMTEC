@@ -12,25 +12,25 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #050505;
-            color: #E5E7EB;
+            background-color: #F9FAFB;
+            color: #111827;
         }
         .font-display {
             font-family: 'Space Grotesk', sans-serif;
         }
         .glass-effect {
-            background: rgba(15, 15, 15, 0.6);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             position: relative;
             overflow: hidden;
         }
         .glow-border {
-             box-shadow: 0 0 20px rgba(0, 123, 255, 0.1);
+             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
         .btn-glow:hover {
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+            box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
         }
 
         /* Interactive Shine Effect */
@@ -43,7 +43,7 @@
             height: 100%;
             background: radial-gradient(
                 circle 200px at var(--x, 50%) var(--y, 50%),
-                rgba(0, 123, 255, 0.2),
+                rgba(0, 123, 255, 0.1),
                 transparent 40%
             );
             opacity: 0;
@@ -73,8 +73,8 @@
             width: 150vw;
             height: 150vw;
             background-image: radial-gradient(circle, #007BFF 0%, transparent 40%), radial-gradient(circle, #46C47C 50%, transparent 80%);
-            mix-blend-mode: screen;
-            opacity: 0.1;
+            mix-blend-mode: multiply;
+            opacity: 0.05;
             filter: blur(100px);
             animation: aurora-animation 80s linear infinite;
         }

@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             animate="visible"
         >
             <nav className="container mx-auto px-6 py-6 flex justify-between items-center">
-                <motion.div variants={navItemVariants} className="text-2xl font-display font-bold text-white tracking-tight">
+                <motion.div variants={navItemVariants} className="text-2xl font-display font-bold text-gray-900 tracking-tight">
                     <a href="#accueil" onClick={(e) => { e.preventDefault(); scrollToSection('accueil'); }}>CLIMTEC</a>
                 </motion.div>
                 <motion.div 
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                     }}
                 >
                     {navLinks.map((link) => (
-                        <motion.a variants={navItemVariants} key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }} className="text-sm font-medium text-gray-400 hover:text-white transition duration-300 relative group uppercase tracking-widest">
+                        <motion.a variants={navItemVariants} key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }} className="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300 relative group uppercase tracking-widest">
                             {link.title}
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#007BFF] transition-all duration-300 group-hover:w-full"></span>
                         </motion.a>
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
                     </a>
                 </motion.div>
                 <div className="md:hidden">
-                    <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+                    <button onClick={() => setIsOpen(!isOpen)} className="text-gray-900 focus:outline-none">
                         {isOpen ? <X size={28} /> : <Menu size={28} />}
                     </button>
                 </div>
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
             <div className={`md:hidden absolute top-full left-0 right-0 glass-effect transition-all duration-500 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="flex flex-col items-center py-4">
                     {navLinks.map((link) => (
-                        <a key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }} className="py-3 text-lg text-gray-200 hover:text-white transition duration-300">
+                        <a key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }} className="py-3 text-lg text-gray-700 hover:text-blue-600 transition duration-300">
                             {link.title}
                         </a>
                     ))}

@@ -9,20 +9,20 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="bg-black text-gray-300 font-sans relative overflow-x-hidden">
+    <div className="bg-[#F9FAFB] text-gray-900 font-sans relative overflow-x-hidden">
       {/* Aurora Background */}
       <div className="aurora-background"></div>
       {/* Static Grid Overlay */}
-      <div className="fixed inset-0 z-0 bg-transparent bg-[radial-gradient(#1a1a1a_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      <div className="fixed inset-0 z-0 bg-transparent bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px]"></div>
 
       <div className="relative z-10 flex flex-col min-h-screen">
         <Toaster 
           position="top-center" 
           toastOptions={{
             style: {
-              background: 'rgba(30, 30, 30, 0.8)',
-              color: '#fff',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
+              background: 'rgba(255, 255, 255, 0.9)',
+              color: '#111827',
+              border: '1px solid rgba(0, 0, 0, 0.05)',
               backdropFilter: 'blur(10px)',
             },
             success: {

@@ -12,8 +12,8 @@ const Reservation: React.FC = () => {
     };
 
     return (
-        <section id="reservation" className="py-32 md:py-48 relative overflow-hidden bg-[#050505]">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(0,123,255,0.05)_0%,transparent_70%)]"></div>
+        <section id="reservation" className="py-32 md:py-48 relative overflow-hidden bg-white">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(0,123,255,0.03)_0%,transparent_70%)]"></div>
             
             <motion.div 
                 className="container mx-auto px-6 relative z-10"
@@ -26,8 +26,8 @@ const Reservation: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <span className="text-[#007BFF] font-display font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Contact Direct</span>
-                            <h2 className="text-4xl md:text-6xl font-display font-bold text-white tracking-tight leading-tight mb-8">Prêt à Démarrer ?</h2>
-                            <p className="text-gray-400 text-lg font-light leading-relaxed mb-10">
+                            <h2 className="text-4xl md:text-6xl font-display font-bold text-gray-900 tracking-tight leading-tight mb-8">Prêt à Démarrer ?</h2>
+                            <p className="text-gray-600 text-lg font-light leading-relaxed mb-10">
                                 Notre équipe est prête à répondre à vos besoins les plus complexes. Remplissez notre formulaire sécurisé pour une prise en charge immédiate.
                             </p>
                             <div className="space-y-6">
@@ -35,21 +35,21 @@ const Reservation: React.FC = () => {
                                     <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center border border-blue-500/20">
                                         <CheckCircle2 className="text-blue-500 h-6 w-6" />
                                     </div>
-                                    <span className="text-gray-300 font-light">Réponse garantie sous 24h</span>
+                                    <span className="text-gray-700 font-light">Réponse garantie sous 24h</span>
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center border border-emerald-500/20">
                                         <CheckCircle2 className="text-emerald-500 h-6 w-6" />
                                     </div>
-                                    <span className="text-gray-300 font-light">Devis gratuit et personnalisé</span>
+                                    <span className="text-gray-700 font-light">Devis gratuit et personnalisé</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="relative">
                             <div className="glass-effect rounded-[2rem] p-10 md:p-14 glow-border relative z-10">
-                                <h3 className="text-2xl font-display font-bold text-white mb-6">Formulaire de Devis</h3>
-                                <p className="text-gray-400 mb-10 font-light text-sm">
+                                <h3 className="text-2xl font-display font-bold text-gray-900 mb-6">Formulaire de Devis</h3>
+                                <p className="text-gray-600 mb-10 font-light text-sm">
                                     Accédez à notre plateforme de réservation pour détailler votre projet.
                                 </p>
                                 <a
@@ -63,7 +63,7 @@ const Reservation: React.FC = () => {
                                 </a>
                             </div>
                             {/* Decorative background for form */}
-                            <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/10 to-emerald-600/10 blur-2xl -z-10 rounded-[3rem]"></div>
+                            <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/5 to-emerald-600/5 blur-2xl -z-10 rounded-[3rem]"></div>
                         </div>
                     </div>
                 </div>

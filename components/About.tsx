@@ -22,7 +22,7 @@ const About: React.FC = () => {
     };
 
     return (
-        <section id="apropos" className="py-32 md:py-56 relative text-white bg-[#050505] overflow-hidden">
+        <section id="apropos" className="py-32 md:py-56 relative text-gray-900 bg-white overflow-hidden">
             {/* Dynamic Background Elements */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 blur-[150px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-600/5 blur-[150px] rounded-full -translate-x-1/2 translate-y-1/2"></div>
@@ -36,9 +36,9 @@ const About: React.FC = () => {
                         variants={contentVariants}
                     >
                         <motion.span variants={itemVariants} className="text-[#007BFF] font-display font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Notre Histoire</motion.span>
-                        <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-display font-bold uppercase mb-8 tracking-tight leading-tight">L'Excellence au Coeur de la Côte d'Ivoire</motion.h2>
+                        <motion.h2 variants={itemVariants} className="text-4xl md:text-6xl font-display font-bold uppercase mb-8 tracking-tight leading-tight text-gray-900">L'Excellence au Coeur de la Côte d'Ivoire</motion.h2>
                         <motion.div variants={itemVariants} className="w-20 h-1 bg-[#007BFF] mb-10"></motion.div>
-                        <motion.p variants={itemVariants} className="text-lg md:text-xl text-gray-400 leading-relaxed font-light mb-8">
+                        <motion.p variants={itemVariants} className="text-lg md:text-xl text-gray-600 leading-relaxed font-light mb-8">
                             CLIMTEC est bien plus qu'une entreprise de maintenance. Nous sommes votre partenaire stratégique pour la pérennité de vos infrastructures et le rayonnement de votre image de marque.
                         </motion.p>
                         <motion.p variants={itemVariants} className="text-base text-gray-500 leading-relaxed font-light">
@@ -53,7 +53,7 @@ const About: React.FC = () => {
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
                     >
-                        <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <div className="relative z-10 rounded-3xl overflow-hidden border border-gray-200 shadow-2xl">
                             <img 
                                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
                                 alt="Climtec Office" 
@@ -62,7 +62,7 @@ const About: React.FC = () => {
                             />
                         </div>
                         {/* Decorative Frame */}
-                        <div className="absolute -bottom-6 -right-6 w-full h-full border border-blue-500/30 rounded-3xl -z-10"></div>
+                        <div className="absolute -bottom-6 -right-6 w-full h-full border border-blue-500/20 rounded-3xl -z-10"></div>
                     </motion.div>
                 </div>
             </div>

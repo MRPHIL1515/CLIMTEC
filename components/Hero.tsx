@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <section id="accueil" className="h-screen flex items-center justify-center relative text-white text-center px-6 overflow-hidden">
+        <section id="accueil" className="h-screen flex items-center justify-center relative text-gray-900 text-center px-6 overflow-hidden">
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat ken-burns" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920')" }}></div>
-                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 bg-white/80"></div>
             </div>
             
             <motion.div 
@@ -37,14 +37,14 @@ const Hero: React.FC = () => {
             >
                 <motion.h1 
                     variants={itemVariants}
-                    className="text-4xl md:text-6xl lg:text-7xl font-display font-bold uppercase tracking-tight leading-tight" 
-                    style={{textShadow: '0 0 20px rgba(0, 123, 255, 0.2)'}}
+                    className="text-4xl md:text-6xl lg:text-7xl font-display font-bold uppercase tracking-tight leading-tight text-gray-900" 
+                    style={{textShadow: '0 4px 12px rgba(0, 0, 0, 0.05)'}}
                 >
                     Votre Solution<br />Multiservice
                 </motion.h1>
                 <motion.p 
                     variants={itemVariants}
-                    className="mt-6 text-base md:text-lg text-gray-400 max-w-xl mx-auto font-light tracking-wide"
+                    className="mt-6 text-base md:text-lg text-gray-600 max-w-xl mx-auto font-light tracking-wide"
                 >
                     Expertise technique, maintenance préventive et solutions connectées. Nous optimisons vos espaces et votre visibilité avec professionnalisme.
                 </motion.p>
