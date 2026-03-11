@@ -12,31 +12,36 @@ export const services: Service[] = [
     {
         id: 1,
         title: "Climatisation",
-        description: "Installation, réparation et entretien complet de vos climatiseurs, pour un confort optimal toute l’année.",
+        description: "Solutions complètes pour votre confort thermique.",
         icon: 'Wrench',
+        subServices: ["Installation & Montage", "Entretien préventif", "Dépannage rapide", "Recharge Gaz", "Nettoyage filtres"]
     },
     {
         id: 2,
         title: "Canalbox & Internet",
-        description: "Installation, configuration et dépannage de votre connexion Internet et de votre box Canalbox.",
+        description: "Connectivité haute performance pour votre foyer.",
         icon: 'Router',
+        subServices: ["Installation Box", "Configuration Wi-Fi", "Câblage réseau", "Dépannage connexion", "Optimisation débit"]
     },
     {
         id: 3,
         title: "Entretien & Jardinage",
-        description: "Un jardin propre, vert et agréable grâce à nos services d’entretien et de jardinage professionnels.",
+        description: "Valorisez vos espaces extérieurs.",
         icon: 'Sprout',
+        subServices: ["Tonte de pelouse", "Taille de haies", "Arrosage automatique", "Aménagement paysager", "Traitement sols"]
     },
     {
         id: 4,
         title: "Gestion de Résidences",
-        description: "Gestion complète de vos résidences, incluant maintenance, nettoyage et suivi technique rigoureux.",
+        description: "Sérénité totale pour vos biens immobiliers.",
         icon: 'Home',
+        subServices: ["Maintenance technique", "Nettoyage parties communes", "Suivi des loyers", "Sécurité & Gardiennage", "Rénovation légère"]
     },
     {
         id: 5,
         title: "Community Management",
-        description: "Boostez votre présence en ligne avec notre service expert de gestion et de création de contenu.",
+        description: "Boostez votre impact sur les réseaux sociaux.",
         icon: 'Share2',
+        subServices: ["Stratégie digitale", "Création de contenu", "Gestion publicitaire", "Modération", "Analyse d'audience"]
     },
 ];

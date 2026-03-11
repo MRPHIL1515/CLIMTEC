@@ -40,25 +40,25 @@ const Header: React.FC = () => {
             initial="hidden"
             animate="visible"
         >
-            <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-                <motion.div variants={navItemVariants} className="text-3xl font-orbitron font-bold text-white tracking-widest">
+            <nav className="container mx-auto px-6 py-6 flex justify-between items-center">
+                <motion.div variants={navItemVariants} className="text-2xl font-display font-bold text-white tracking-tight">
                     <a href="#accueil" onClick={(e) => { e.preventDefault(); scrollToSection('accueil'); }}>CLIMTEC</a>
                 </motion.div>
                 <motion.div 
-                    className="hidden md:flex items-center space-x-8"
+                    className="hidden md:flex items-center space-x-10"
                     variants={{
                         visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } }
                     }}
                 >
                     {navLinks.map((link) => (
-                        <motion.a variants={navItemVariants} key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }} className="text-gray-300 hover:text-white transition duration-300 relative group">
+                        <motion.a variants={navItemVariants} key={link.id} href={`#${link.id}`} onClick={(e) => { e.preventDefault(); scrollToSection(link.id); }} className="text-sm font-medium text-gray-400 hover:text-white transition duration-300 relative group uppercase tracking-widest">
                             {link.title}
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#007BFF] transition-all duration-300 group-hover:w-full"></span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#007BFF] transition-all duration-300 group-hover:w-full"></span>
                         </motion.a>
                     ))}
                 </motion.div>
                 <motion.div variants={navItemVariants} className="hidden md:block">
-                    <a href="#reservation" onClick={(e) => { e.preventDefault(); scrollToSection('reservation'); }} className="bg-[#007BFF] text-white font-bold py-2 px-6 rounded-lg transition-all duration-300 btn-glow">
+                    <a href="#reservation" onClick={(e) => { e.preventDefault(); scrollToSection('reservation'); }} className="bg-[#007BFF] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 btn-glow text-sm uppercase tracking-widest">
                         Demander un devis
                     </a>
                 </motion.div>

@@ -14,11 +14,11 @@ const Footer: React.FC = () => {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                     <div>
-                        <h3 className="text-2xl font-orbitron font-bold text-white mb-4">CLIMTEC</h3>
-                        <p className="text-sm">Votre partenaire de confiance pour des solutions intégrées en Côte d’Ivoire.</p>
+                        <h3 className="text-2xl font-display font-bold text-white mb-4">CLIMTEC</h3>
+                        <p className="text-sm leading-relaxed">Votre partenaire de confiance pour des solutions intégrées en Côte d’Ivoire.</p>
                     </div>
                     <div>
-                        <h4 className="text-lg font-bold text-white mb-4 font-orbitron">Contact</h4>
+                        <h4 className="text-lg font-bold text-white mb-4 font-display uppercase tracking-wider">Contact</h4>
                         <ul className="space-y-2 text-sm">
                             <li>Téléphone: +225 07 00 83 58 86</li>
                             <li>WhatsApp: +225 07 00 83 58 86</li>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-lg font-bold text-white mb-4 font-orbitron">Suivez-nous</h4>
+                        <h4 className="text-lg font-bold text-white mb-4 font-display uppercase tracking-wider">Suivez-nous</h4>
                         <div className="flex justify-center md:justify-start space-x-4">
                             <a href="#" className="text-gray-400 hover:text-[#007BFF] transition-colors duration-300"><Facebook size={24} /></a>
                             <a href="#" className="text-gray-400 hover:text-[#007BFF] transition-colors duration-300"><Instagram size={24} /></a>

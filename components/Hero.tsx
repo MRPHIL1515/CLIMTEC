@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
     return (
         <section id="accueil" className="h-screen flex items-center justify-center relative text-white text-center px-6 overflow-hidden">
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat ken-burns" style={{ backgroundImage: "url('https://picsum.photos/seed/climtec-hero/1920/1080')" }}></div>
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat ken-burns" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920')" }}></div>
                 <div className="absolute inset-0 bg-black opacity-70"></div>
             </div>
             
@@ -37,23 +37,23 @@ const Hero: React.FC = () => {
             >
                 <motion.h1 
                     variants={itemVariants}
-                    className="text-4xl md:text-6xl lg:text-7xl font-orbitron font-extrabold uppercase tracking-wider" 
-                    style={{textShadow: '0 0 15px rgba(0, 123, 255, 0.7)'}}
+                    className="text-4xl md:text-6xl lg:text-7xl font-display font-bold uppercase tracking-tight leading-tight" 
+                    style={{textShadow: '0 0 20px rgba(0, 123, 255, 0.2)'}}
                 >
-                    Votre Solution Multiservice
+                    Votre Solution<br />Multiservice
                 </motion.h1>
                 <motion.p 
                     variants={itemVariants}
-                    className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"
+                    className="mt-6 text-base md:text-lg text-gray-400 max-w-xl mx-auto font-light tracking-wide"
                 >
-                    Chez CLIMTEC, nous mettons notre savoir-faire au service de vos besoins, pour des interventions rapides, efficaces et professionnelles. Maintenance, connectivité et entretien.
+                    Expertise technique, maintenance préventive et solutions connectées. Nous optimisons vos espaces et votre visibilité avec professionnalisme.
                 </motion.p>
                 <motion.div variants={itemVariants}>
                     <button 
                         onClick={() => scrollToSection('services')} 
-                        className="mt-10 bg-[#007BFF] text-white font-bold py-3 px-10 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 btn-glow"
+                        className="mt-10 bg-[#007BFF] text-white font-semibold py-3 px-10 rounded-full text-base transition-all duration-300 transform hover:scale-105 btn-glow uppercase tracking-widest"
                     >
-                        Découvrir nos services
+                        Explorer le catalogue
                     </button>
                 </motion.div>
             </motion.div>
